@@ -1,0 +1,16 @@
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="kr.co.ensmart.frameworkdemo.app.mapper.user.UserMapper">
+	<select id="findByUserName" parameterType="string" resultType="user">
+		/* UserMapper.findByUserName */
+		select
+			id,
+			user_name,
+			password,
+			email
+		from "user"
+		where user_name = #{username}
+	</select>
+</mapper>

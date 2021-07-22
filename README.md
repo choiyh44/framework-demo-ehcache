@@ -22,7 +22,7 @@ spring:
       config: classpath:ehcache.xml
 ```
 
-- echcache.xml 설정파일을 작성한다.
+- ehcache.xml 설정파일을 작성한다.
 ```
 <config xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
 	xmlns='http://www.ehcache.org/v3'
